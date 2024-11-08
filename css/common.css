@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* ============================
+* フォント、背景
+* ========================= */
+:root {
+  /* 10px */
+  --font-10: 0.625rem;
+  /* 12px */
+  --font-12: 0.75rem;
+  /* 13px */
+  --font-13: 0.8125rem;
+  /* 14px */
+  --font-14: 0.875rem;
+  /* 15px */
+  --font-15: 0.9375rem;
+  /* 16px */
+  --font-16: 1rem;
+  /* 18px */
+  --font-18: 1.125rem;
+  /* 20px */
+  --font-20: 1.25rem;
+  /* 24px */
+  --font-24: 1.5rem;
+  /* 28px */
+  --font-28: 1.75rem;
+  /* 32px */
+  --font-32: 2rem;
+  /* 36px */
+  --font-36: 2.25rem;
+  /* 40px */
+  --font-40: 2.25rem;
+  /* 46px */
+  --font-46: 2.8755rem;
+  /* 72px */
+  --font-72: 4.5rem;
+  /* 14.4px */
+  --text-1: 0.9rem;
+
+  /* 文字カラー */
+  --font-black: #333;
+  --font-white: #fff;
+  --font-red: #ff2a3a;
+
+  /* ラインカラー */
+  --line-black: #333;
+  --line-white: #fff;
+
+  /* 背景色 */
+  --bg-black: #000;
+  --bg-white: #fff;
+  --bg-red: #ff2a3a;
+  --bg-gray: #e8e8e8;
+  --bg-darkgray: #414141;
+
+  /* ボタンカラー */
+  --btn-color: #4b4b4b;
+}
+
+/* メディアクエリ */
+/* @media screen and (max-width: 767px) {
+} */
+
+/* ============================
+* 共通
+* ========================= */
+/* コンテンツ幅 */
+.section__inner {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* ============================
+* header
+* ========================= */
+.header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: center;
+}
+
+/* ============================
+*  main
+* ========================= */
+/* .メインビジュアル */
+.main-visual {
+  width: 100%;
+  height: auto;
+}
+
+/* ナビ */
+.global-nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+/* コンテンツ */
+/* Concept */
+.concept__inner {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Blog */
+.blog__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  flex-wrap: wrap;
+  gap: 54px 30px;
+}
+
+/* ============================
+* footer
+* ========================= */
+.footer {
+  background-color: var(--bg-black);
+}
