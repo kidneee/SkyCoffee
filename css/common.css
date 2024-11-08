@@ -40,7 +40,7 @@
   /* 文字カラー */
   --font-black: #333;
   --font-white: #fff;
-  --font-red: #ff2a3a;
+  --font-blue: #24A8BF;
 
   /* ラインカラー */
   --line-black: #333;
@@ -64,11 +64,20 @@
 /* ============================
 * 共通
 * ========================= */
+body {
+  font-family: Arial, "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
 /* コンテンツ幅 */
 .section__inner {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 50px 30px;
+}
+
+.blue-bold {
+  color: var(--font-blue);
+  font-weight: 700;
 }
 
 /* ============================
@@ -94,6 +103,10 @@
 }
 
 /* ナビ */
+.global-nav {
+  padding: 40px 0;
+}
+
 .global-nav__list {
   display: flex;
   justify-content: center;
@@ -106,6 +119,8 @@
   display: flex;
   flex-direction: row-reverse;
 }
+
+.concept__title {}
 
 /* Blog */
 .blog__list {
