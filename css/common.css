@@ -65,7 +65,11 @@
 * 共通
 * ========================= */
 body {
-  font-family: Arial, "Hiragino Kaku Gothic ProN", sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+:lang(en) {
+  font-family: "Arial", sans-serif;
 }
 
 /* コンテンツ幅 */
@@ -130,6 +134,11 @@ body {
   gap: 40px;
 }
 
+.concept--right {
+  margin-top: 12px;
+  letter-spacing: 0.1em;
+}
+
 .concept__title {
   font-size: var(--font-16);
   color: var(--font-black);
@@ -143,7 +152,9 @@ body {
   display: block;
   font-size: var(--font-32);
   line-height: 1.344;
-  padding-top: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
 }
 
 .concept__text {
@@ -157,14 +168,17 @@ body {
   line-height: 1;
   text-align: center;
   margin-bottom: 30px;
+  letter-spacing: 0.08em;
+  margin-left: 2px;
 }
 
 .blog__sub-title {
   display: block;
-  font-size: var(--font-16);
+  font-size: var(--font-13);
   color: var(--font-black);
   font-weight: 400;
-  padding-top: 18px;
+  margin-top: 8px;
+  letter-spacing: 0.11em;
 }
 
 .blog__list {
@@ -172,8 +186,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 350px);
   flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 30px;
+  gap: 27px 30px;
+  margin-bottom: 27px;
 }
 
 .blog__item-link {
@@ -181,7 +195,8 @@ body {
 }
 
 .blog__item-img {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
+  object-fit: cover;
 }
 
 .blog__item-title {
@@ -189,11 +204,13 @@ body {
   line-height: 1.6;
   margin-bottom: 6px;
   font-weight: 600;
+  padding-right: 22px;
 }
 
 .blog__item-date {
   font-size: var(--font-12);
   line-height: 1.083;
+  letter-spacing: 0.05em;
 }
 
 .blog__link-wrapper {
@@ -202,7 +219,7 @@ body {
   border: 1px solid #24A8BF;
   border-radius: 3px;
   padding-top: 18px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   width: 220px;
   margin: 0 auto;
   position: relative;
@@ -224,7 +241,7 @@ body {
   border-left: 5px solid #24A8BF;
   position: absolute;
   top: 50%;
-  right: 21px;
+  right: 18px;
   transform: translateY(-50%);
 }
 
@@ -241,7 +258,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+}
+
+.footer__img {
+  margin-bottom: 50px;
 }
 
 .footer__link {
@@ -253,4 +273,5 @@ body {
   display: block;
   font-size: var(--font-12);
   line-height: 1.9;
+  letter-spacing: 0.05em;
 }
