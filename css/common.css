@@ -113,11 +113,20 @@ body {
   gap: 80px;
 }
 
+.global-nav__link {
+  font-size: var(--font-18);
+  line-height: 1;
+  color: var(--font-black);
+  letter-spacing: 0.1em;
+}
+
 /* コンテンツ */
 /* Concept */
 .concept__inner {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
   gap: 40px;
 }
 
@@ -125,13 +134,15 @@ body {
   font-size: var(--font-16);
   color: var(--font-black);
   font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.15;
   margin-bottom: 30px;
 }
 
 .concept__sub-title {
   display: block;
   font-size: var(--font-32);
-  line-height: 1.34375;
+  line-height: 1.344;
   padding-top: 20px;
 }
 
